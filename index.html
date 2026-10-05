@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta name="description" content="Небольшой подарок для my angel — с любовью от Златы.">
+  <title>my angel — с Днём Рождения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-stars"></div>
+    <div class="intro-content">
+      <p class="small-caps">для тебя · 05.10.2026</p>
+      <div class="intro-symbol">✦</div>
+      <h1>my<br><em>angel</em></h1>
+      <p>небольшой подарок,<br>который можно открыть издалека</p>
+      <button class="open-gift" id="openGift">открыть подарок <span>→</span></button>
+    </div>
+  </div>
+  <div class="grain"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="signature">Z · S</div>
+    <button class="music-toggle" id="musicToggle" aria-label="Включить музыку">
+      <span class="music-icon">♫</span>
+      <span id="musicLabel">включить музыку</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-orbit"></div>
+      <p class="eyebrow reveal">для одного очень особенного человека</p>
+      <h1 class="hero-title reveal">С Днём<br><em>Рождения,</em></h1>
+      <div class="hero-name reveal">my angel</div>
+      <p class="hero-subtitle reveal">даже если между нами сейчас расстояние,<br>оно не мешает мне быть рядом с тобой.</p>
+      <div class="hero-date reveal"></div>
+      <a class="scroll-cue reveal" href="#letter"><i>↓</i></a>
+    </section>
+
+    <section class="letter section" id="letter">
+      <div class="section-mark">01 / письмо</div>
+      <div class="letter-layout">
+        <div class="letter-intro">
+          <span class="gold-line"></span>
+          <p class="small-caps">несколько слов, которые хотелось сказать лично</p>
+          <h2>Моя<br><em>дорогая,</em></h2>
+        </div>
+        <article class="letter-text">
+          <p>К сожалению, я не смогу тебя обнять вживую и сказать все слова любви и благодарности, которые живут во мне, но это временно).</p>
+          <p>Зато, благодаря информационным технологиям, я могу делать и такие вещи).</p>
+
+          <p>Моя дорогая, помни всегда, что ты — уникальный человек. Я надеюсь, что ты говоришь это себе, потому что в современном мире, где полно негатива, эмоционального застоя и прочего мракобесия, — ты настоящий лучик света.</p>
+
+          <p>Знаешь, наш мир словно космос: везде кромешная тьма, но стоит пролететь и преодолеть длинный путь размером в несколько сотен миллиардов световых лет, и ты обнаруживаешь свет. Свет, который очень трудно отыскать, но он есть, и он дарит не только тепло, но и новую жизнь.</p>
+
+          <blockquote>Цени в себе свою уникальность и внутренний свет. И никогда, слышишь, никогда не давай другим людям погасить этот свет. Сохрани его в себе на долгие годы.</blockquote>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-mark">02 / воспоминания</div>
+      <div class="gallery-heading">
+        <div>
+          <p class="small-caps">маленькая коллекция моментов</p>
+          <h2>Ты —<br><em>здесь.</em></h2>
+        </div>
+        <p class="gallery-note">Листай фотографии.<br>Некоторые воспоминания<br>особенно хорошо живут в кадрах.</p>
+      </div>
+
+      <div class="slider" id="slider">
+        <button class="slider-arrow prev" id="prev" aria-label="Предыдущая фотография">←</button>
+        <div class="slides">
+          <div class="slide active"><img src="images/photo-01.jpg" alt="Фотография именинницы" loading="eager"></div>
+          <div class="slide"><img src="images/photo-02.jpg" alt="Фотография именинницы на катке" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-03.jpg" alt="Совместная фотография друзей" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-04.jpg" alt="Совместная фотография" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-05.jpg" alt="Ночная фотография в Петербурге" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-06.jpg" alt="Портрет" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-07.jpg" alt="Фотография на улице" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-08.jpg" alt="Фотография с виолончелью" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-09.jpg" alt="Фотография с музыкантами" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-10.jpg" alt="Фотография в красном платье" loading="lazy"></div>
+          <div class="slide"><img src="images/photo-11.jpg" alt="Портрет" loading="lazy"></div>
+        </div>
+        <button class="slider-arrow next" id="next" aria-label="Следующая фотография">→</button>
+        <div class="slider-meta">
+          <span id="counter">01 / 11</span>
+        </div>
+        <div class="slider-dots" id="sliderDots" aria-label="Выбор фотографии"></div>
+      </div>
+    </section>
+
+    <section class="music section" id="music">
+      <div class="section-mark">03 / музыка</div>
+      <div class="music-card">
+        <div class="vinyl" id="vinyl">
+          <div class="vinyl-center">♫</div>
+        </div>
+        <div class="music-copy">
+          <p class="small-caps">потому что некоторые люди сами становятся музыкой</p>
+          <h2>Ты — и есть<br><em>музыка.</em></h2>
+          <p>Ты тот человек, который видит, который чувствует музыку. Не сходи с этого пути — он твой.</p>
+          <p>И, идя по этому пути, ты обязательно добьёшься высот. Я очень надеюсь, что однажды ты будешь давать сольные концерты или гастроли в разных частях мира.</p>
+          <p class="gold-text">У тебя всё впереди. Ты достойна всего самого наилучшего.</p>
+          <div class="audio-player">
+            <audio id="audio" preload="metadata" loop>
+              <source src="music/favorite.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playButton" class="play-button">▶</button>
+            <div class="track-info">
+              <span class="track-title">Futile Devices — Sufjan Stevens</span>
+              <span class="track-subtitle">песня, которая могла бы звучать здесь</span>
+            </div>
+            <div class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wishes section">
+      <div class="section-mark">04 / тебе</div>
+      <div class="wish-grid">
+        <div class="wish-card"><span>01</span><h3>Свет</h3><p>Никогда не позволяй никому погасить тот свет, который есть внутри тебя.</p></div>
+        <div class="wish-card"><span>02</span><h3>Музыка</h3><p>Продолжай чувствовать её так, как умеешь только ты. Твой путь обязательно приведёт тебя в нужное место.</p></div>
+        <div class="wish-card"><span>03</span><h3>Счастье</h3><p>Пусть впереди будет много людей, мест, концертов и моментов, которые захочется запомнить навсегда.</p></div>
+      </div>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="constellation" aria-hidden="true">✦　·　✧　·　✦</div>
+      <div class="final-glow"></div>
+      <p class="small-caps">и напоследок</p>
+      <h2>Спасибо,<br><em>что ты есть.</em></h2>
+      <div class="final-text">
+        <p>Я очень ценю, что ты появилась в моей жизни.</p>
+        <p>Спасибо тебе. Ты прекрасна!</p>
+        <p>Однажды я приеду, и мы будем вместе ходить по самому центру Петербурга и разговаривать обо всём на свете.</p>
+      </div>
+      <div class="love">С любовью,<br><strong>от Златы</strong></div>
+      <a href="#top" class="back-top">↑ вернуться в начало</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
